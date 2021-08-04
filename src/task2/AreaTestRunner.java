@@ -14,9 +14,9 @@ public class AreaTestRunner {
         Area square = new Area(6);
 		System.out.println("Area of square is " + square.area);
          Area rectangle = new Area(4,5);
-		System.out.println("Area of rectangle is " + rectangle.area1);
+		System.out.println("Area of rectangle is " + rectangle.area);
         Area circle = new Area(2.5);
-		System.out.println("Area of circle is " + circle.area2);
+		System.out.println("Area of circle is " + circle.area1);
                 
     }
 }

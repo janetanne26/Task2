@@ -12,22 +12,23 @@ import java.util.Scanner;
  */
 public class CreateFile {
     public void createFile() {
-		try {
-		File file = new File("Sample.txt");
-		PrintWriter pw = new PrintWriter(file);
+		try(PrintWriter pw = new PrintWriter("Sample.txt")) {
+		pw.println("Programmatically created file");
+		pw.println("These words were written programmatically");
 		pw.println("All is Well. Be happy & enjoy the moment");
-		pw.close();
+
 		} catch (IOException e)  {
 			e.printStackTrace();
 		}
+
+
 	}
 
 	public void readFile() {
-		try {
-			File file = new File("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Task2\\Sample.txt");
-			Scanner scan = new Scanner(file);
-			scan.useDelimiter("\\Z");
-			System.out.println(scan.next());
+		try(Scanner s = new Scanner(new File("//home//inc9//IdeaProjects//Task2//Sample.txt"))) {
+			s.useDelimiter("\\Z");
+			String text=s.next();
+			System.out.println(text);
 		} 
 		catch (Exception e)  {
 			e.printStackTrace();

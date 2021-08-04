@@ -11,18 +11,17 @@ package task2;
  */
 public class Area {
     int area;
-     int area1;
-    double area2;
+    double area1;
     Area(int side){
         
         area=side*side;
     }
     Area(int length,int breadth){
         
-        area1=length*breadth;
+        area=length*breadth;
     }
     Area(double radius){
         
-        area2= 3.14*radius*radius;
+        area1= 3.14 *radius*radius;
     }
 }

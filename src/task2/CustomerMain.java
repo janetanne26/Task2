@@ -10,15 +10,17 @@ package task2;
  * @author Admin
  */
 public class CustomerMain {
+
+
     public static void main(String[] args) {
-        BankCustomer customer=new BankCustomer();
+
+       BankCustomer customer=new BankCustomer();
         customer.setCustid(110);
-        customer.setName("janu");
+        customer.setName("janet");
         customer.setEmailid("janet@gmail.com");
         customer.setPassword("123##s");
         customer.setPhno("7010036437");
-        System.out.println("CustomerID:"+customer.getCustid()+ "  Name:"+ customer.getName()+"  emailid:"+customer.getEmailid()
-                             +"   Password:"+customer.getPassword() +"  Phone number:"+customer.getPhno());
+        System.out.println(customer);
         System.out.println("Account created successfully");       
     }
 }

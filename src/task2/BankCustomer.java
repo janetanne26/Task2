@@ -14,37 +14,49 @@ public class BankCustomer {
     private int custid;  
     private String password;
     private String emailid;
-    private String phno;  
-    
+    private String phno;
+
      public int getCustid(){
-        return custid;
+
+         return custid;
     }
     public void setCustid(int custid){
         this.custid=custid;
     }
     public String getName(){
-        return name;
+
+         return name;
     }
      public void setName(String name){
-        this.name=name;
+
+         this.name=name;
     }
    
     public String getPassword(){
-        return password;
+
+         return password;
     }
      public void setPassword(String password){
-       this.password=password;
+
+         this.password=password;
     }
       public String getEmailid(){
-        return emailid;
+
+         return emailid;
     }
      public void setEmailid(String emailid){
         this.emailid=emailid;
     }
     public String getPhno(){
-        return phno;
+
+         return phno;
     }
      public void setPhno(String phno){
-        this.phno=phno;
+
+         this.phno=phno;
+    }
+    @Override
+    public String toString() {
+        return "ID:"+custid +" " +"Name:"+name +" "+"password:"+password+ " "+"emailid:"+emailid+" "+"phone_number:"+phno;
     }
 }

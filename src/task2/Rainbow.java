@@ -17,12 +17,14 @@ public enum Rainbow {
 		YELLOW(5),
 		ORANGE(6),
 		RED(7);
-	private int number;
-		Rainbow(int number) {
-			this.number=number;
+	private int value;
+		Rainbow(int value) {
+
+			this.value=value;
 		}
 		public int getNumber() {
-			return this.number;
+
+			return value;
 		}
 	}
 
